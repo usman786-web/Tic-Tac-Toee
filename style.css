@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2C3E50;
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffcf;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.box:hover{
+    transform: scale(1.06);
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+#reset{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+#newbtn{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+#msg{
+    color: #ffffc7;
+    font-size: 5vmin;
+}
+.msgcontainer{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{
+    display: none;
+}
+#reset,
+#newbtn{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#reset:hover,
+#newbtn:hover{
+    background-color: #2ECC71;
+    transform: scale(1.05);
+}
+/* scoreboard*/
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.score{
+    background-color: #34495E;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.box:active{
+    transform: scale(0.92);
+}
+#modeBtn{
+    padding: 12px 20px;
+    margin: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #191913;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#modeBtn:hover{
+    transform: scale(1.05);
+    background-color: #2ECC71;
+}
+
+
